@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>Save audio data</title>
+</head>
+
+<body>
+    <!-- <a id="download">Download</a>
+    <button id="stop">Stop</button> -->
+
+
+    <button id="devices_button" onclick="getDeviceList()">getDevices</button>
+    <select id="camera_list" size="1" style="width:160pt;">
+    <option>(video)</option>
+    </select>
+    <select id="mic_list" size="1" style="width:160pt;">
+    <option>(audio)</option>
+    </select>
+    <select id="speaker_list" size="1" style="width:160pt;">
+    <option>(speaker)</option>
+    </select>
+    <button id="start_video_button" onclick="startSelectedVideoAudio()">Start Selected Video/Audio</button>
+    <button id="stop_button" onclick="stopVideo()">StopVideo</button>
+    <button id="speaker_button" onclick="setSpeaker()">SetSpeaker</button>
+    <button id="speaker_button" onclick="startFakeVideo()">start Fake video</button>
+    <br />
+    <video id="local_video" width="320px" height="240px" autoplay="1" controls="1" style="border: 1px solid;"></video>
+    <div id="container"></div>
+
+    <!-- <script src="audio.js"></script> -->
+    <script src="sample.js"></script>
+</body>
+
+</html>
